@@ -1,14 +1,11 @@
-The second heuristic I used was the straight line function; I figured it had to be better than the Manhatten distance because it was admissable, as opposed to the manhatten distance.
-Theoretically, there would be scenarios where the Manhatten distance heuristic would overestimate the total movement necessary to reach the goal (such as pure diagonal movement).
-I thought the straight line heuristic would always produce a better solution than the manhatten distance, however I failed to take into account the fact that I wasn't calculating actual distances, but movement from square to square.
-Thus, my somewhat dumber version of the function sometimes returns a better result, and sometimes returns a worse result, than the manhatten heuristic.
+The second heuristic I used was the straight line function; I figured it had to be better than the Manhatten distance because it was admissable, as opposed to the manhatten distance.Theoretically, there would be scenarios where the Manhatten distance heuristic would overestimate the total movement necessary to reach the goal (such as pure diagonal movement).I thought the straight line heuristic would always produce a better solution than the manhatten distance, however I failed to take into account the fact that I wasn't calculating actual distances, but movement from square to square.Thus, my somewhat dumber version of the function sometimes returns a better result, and sometimes returns a worse result, than the manhatten heuristic.
 
-Equations
+#Equations#
 
-Manhatten Distance
+##Manhatten Distance##
 Adds number of horizontal moves + number of vertical moves (as if only moving in cardinal directions) and multiplies by 10.  Will obviously underestimate in cases of mountain movement.
 
-Dumbed Down Straight Line Heuristic
+##Dumbed Down Straight Line Heuristic##
 Square Root(horizontal moves to goal squared + vertical moves to goal squared)*10 = Approximation of Straight Line
 
 World1 Manhatten Path: 14 Nodes visited, Path cost 170, [('0', '7'), ('1', '6'), ('1', '5'), ('1', '4'), ('1', '3'), ('2', '2'), ('3', '2'), ('4', '1'), ('5', '0'), ('5', '1'), ('6', '0'), ('7', '0'), ('8', '0'), ('9', '0')]
