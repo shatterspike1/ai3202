@@ -9,9 +9,11 @@ Adds number of horizontal moves + number of vertical moves (as if only moving in
 Square Root(horizontal moves to goal squared + vertical moves to goal squared)*10 = Approximation of Straight Line
 
 World1 Manhatten Path: 14 Nodes visited, Path cost 170, [('0', '7'), ('1', '6'), ('1', '5'), ('1', '4'), ('1', '3'), ('2', '2'), ('3', '2'), ('4', '1'), ('5', '0'), ('5', '1'), ('6', '0'), ('7', '0'), ('8', '0'), ('9', '0')]
+
 World1 Straight Line Path: 14 Nodes visited, Path cost 158, [('0', '7'), ('1', '6'), ('1', '7'), ('2', '7'), ('3', '6'), ('4', '5'), ('3', '5'), ('4', '4'), ('5', '3'), ('6', '3'), ('7', '2'), ('7', '1'), ('8', '0'), ('9', '0')]
 
 World2 Manhatten Path: 15 Nodes visited, Path cost 156, [('0', '7'), ('1', '6'), ('0', '6'), ('0', '5'), ('1', '4'), ('2', '4'), ('3', '4'), ('4', '3'), ('4', '2'), ('4', '1'), ('5', '0'), ('6', '0'), ('7', '0'), ('8', '0'), ('9', '0')]
+
 World2 Straight Line Path: 12 Nodes visited, Path cost 158, [('0', '7'), ('1', '6'), ('1', '7'), ('2', '7'), ('3', '6'), ('3', '5'), ('4', '4'), ('5', '3'), ('6', '3'), ('7', '2'), ('8', '1'), ('9', '0')]
 
 Command Line Argument Should be written as:
