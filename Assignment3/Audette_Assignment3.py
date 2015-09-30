@@ -44,13 +44,17 @@ def actualDist(fro, to):
     if(((fro.x+fro.y) - (to.x+to.y) == 2) or ((fro.x+fro.y) - (to.x+to.y) == -2) or ((fro.x+fro.y) - (to.x+to.y) == 0)):
         if(to.k == 0):
             return 14
-        else:
+        elif(to.k == 1):
             return 24
+        else:
+            return 9999
     else:
         if(to.k == 0):
             return 10
-        else:
+        elif(to.k == 1):
             return 20
+        else:
+            return 9999
 
 
 def readIn(fileName):
@@ -102,7 +106,7 @@ def aStar(start, end, heu):
         else:
             closedL.append(node)
             for n in node.adj:
-                if n in closedL:
+                if (n in closedL) or (n.k == 2):
                     continue
                 g = node.dist + actualDist(node, n)
                 if n not in openL.queue or g < n.dist:
@@ -137,6 +141,7 @@ if(len(sys.argv) == 1):
     print('No Text File read in')
 elif(len(sys.argv) == 2):
     g = readIn(sys.argv[1])
+    print(str(g[len(g)-1][0].y))
     aStar(g[len(g)-1][0], g[0][len(g[len(g)-1])-1], 1)
 else:
     g = readIn(sys.argv[1])
