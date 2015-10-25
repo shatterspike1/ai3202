@@ -1,0 +1,1 @@
+Command Line Arguments for Joint Probability should be wrapped in quotes and seperated by commas.  Other than that, all arguments should work as in the last e-mail sent out.
